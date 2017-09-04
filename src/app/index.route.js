@@ -37,6 +37,12 @@ export function routerConfig ($stateProvider, $urlRouterProvider, $futureStatePr
       templateUrl: 'app/login/login.html',
       controller: 'LoginController',
       controllerAs: 'vm'
+    })
+    .state('main.ball', {
+      url: '/ball',
+      templateUrl: 'app/ball/ball.html',
+      controller: 'BallController',
+      controllerAs: 'vm'
     });
 
 

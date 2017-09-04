@@ -17,6 +17,8 @@ import {NewDMDutyController} from './DanMu/NewDMDuty/newdmduty';
 import {DingYueController} from './DingYue/dingyue';
 import {LiWuController} from './LiWu/liwu';
 
+
+import{BallController} from './ball/ball';
 angular.module('kun', ['ngAnimate',
 'ngResource', 'ngCookies', 'ngMessages',
  'ngTouch', 'ui.router', 'ui.bootstrap',
@@ -37,6 +39,8 @@ angular.module('kun', ['ngAnimate',
   .controller('NewDMDutyController',NewDMDutyController)
   .controller('DingYueController',DingYueController)
   .controller('LiWuController',LiWuController)
+
+  .controller('BallController',BallController)
 
   .factory('KunHttp',KunHttp)
   .factory('NotifyService',NotifyService)
