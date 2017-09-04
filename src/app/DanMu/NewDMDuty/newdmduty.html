@@ -1,0 +1,39 @@
+<br/>
+<form name="DMForm" class="form-horizontal" ng-submit="vm.addDM(vm.newDMDuty)" >
+  <div class="form-group">
+    <label  class="col-sm-4 control-label">房间号:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" name="roomDomain" placeholder="" ng-model="vm.newDMDuty.roomDomain" required="required">
+    </div>
+  </div>
+  <div class="form-group">
+    <label  class="col-sm-4 control-label">发送弹幕数:</label>
+    <div class="col-sm-4">
+      <input type="number" class="form-control" name="numberPerMinute" placeholder="" ng-model="vm.newDMDuty.numberPerMinute" required="required">
+    </div>
+  </div>
+  <div class="form-group">
+    <label  class="col-sm-4 control-label">自定义弹幕文本:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" name="contents" placeholder="" ng-model="vm.newDMDuty.contents">
+    </div>
+  </div>
+  <div class="form-group">
+    <label  class="col-sm-4 control-label">有效时长:</label>
+    <div class="col-sm-4">
+      <input type="number" class="form-control" name="duration" placeholder="" ng-model="vm.newDMDuty.duration" required="required" step="0.01">
+    </div>
+  </div>
+  <div class="form-group">
+    <label  class="col-sm-4 control-label">弹幕人数:</label>
+    <div class="col-sm-4">
+      <input type="number" class="form-control" name="cookiesNum" placeholder="" ng-model="vm.newDMDuty.cookiesNum" required="required">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-4 col-sm-10">
+      <button type="submit" class="btn btn-primary" ng-disabled="DMForm.$invalid">提交</button>
+    </div>
+  </div>
+</form>

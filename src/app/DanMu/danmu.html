@@ -1,0 +1,32 @@
+<div class="ibox-content">
+  <button type="button" name="button"class="btn btn-w-m btn-success" ng-click="vm.addNewDanMu()">新增任务</button>
+</div>
+<div class="ibox-content">
+  <div class="alert alert-warning" role="alert">当前可用弹幕数量为10000</div>
+</div>
+<div class="ibox-content">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>房间号</th>
+        <th>发送弹幕数/分钟</th>
+        <th>自定义弹幕文本(可以为空)</th>
+        <th>有效时长</th>
+        <th>弹幕人数</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in vm.danmuList">
+        <td>{{item.configId}}</td>
+        <td>{{item.roomDomain}}</td>
+        <td>{{item.numberPerMinute}}</td>
+        <td>{{item.contents}}</td>
+        <td>{{item.duration}}</td>
+        <td>{{item.cookiesNum}}</td>
+        <td><button class="btn btn-w-m btn-warning" ng-click="vm.delDanMuDuty(item.configId)">删除此任务</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

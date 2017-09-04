@@ -1,0 +1,15 @@
+<div class="back-login animated fadeInDown" >
+  <div class="content">
+    <div class="login-form">
+      <h2>
+        <span>后台管理中心</span>
+      </h2>
+      <p>欢迎。请登录。</p>
+      <form name="loginForm" ng-submit="vm.login(vm.data)" class="form" novalidate>
+        <input class="form-control" type="text" placeholder="请输入用户名／手机号／Email" required="" ng-model="vm.data.username" name="uesrnameInput">
+        <input class="form-control" type="password" placeholder="请输入密码" required="" ng-model="vm.data.password" name="passwordInput">
+        <button type="submit" class="btn btn-block" ng-disabled="loginForm.$invalid">登录</button>
+      </form>
+    </div>
+  </div>
+</div>

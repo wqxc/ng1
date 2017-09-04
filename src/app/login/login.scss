@@ -1,0 +1,137 @@
+// scss-lint:disable
+.back-login{
+  position: absolute;
+  width: 100%;
+  min-height: 768px;
+  height: 100%;
+  color: #fff;
+  background: #41a5df;
+  padding-top: 140px;
+  background-color: #41a5df;
+  background-image: linear-gradient(to right bottom, #41a5df, #41dfb1);
+  .content{
+    text-align: center;
+
+    width: 100%;
+    // background-image: url('http://zhaime.qiniudn.com/uploads/activity/20150602loginmac.png');
+    // background-repeat: no-repeat;
+    // background-position: bottom right;
+    min-height: 450px;
+    //margin: auto;
+  }
+  .login-form{
+    max-width: 340px;
+    width: 340px;
+    display: inline-block;
+    vertical-align: top;
+    h2{
+      line-height: 72px;
+      vertical-align: top;
+      font-weight: normal;
+      height: 72px;
+      font-size: 23px;
+      span{
+        // border-right: 1px solid #fff;
+        vertical-align: top;
+        font-size: 26px;
+          margin-right: 6px;
+          padding-right: 6px;
+      }
+    }
+    p{
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .login-icon{
+      width: 60px;
+      height: 60px;
+      border-radius: 3px;
+      display: inline-block;
+      text-align: center;
+      margin-right: 10px;
+      cursor: pointer;
+      .icon{
+        margin: 8px auto 6px;
+        height: 25px;
+        background-image: url('http://zhaime.qiniudn.com/uploads/activity/20150602loginicons.png');
+        background-repeat: no-repeat;
+      }
+      .icon1{
+        width: 22px;
+      }
+      .icon2{
+        width: 21px;
+        background-position: -23px 0;
+      }
+      .icon3{
+        width: 23px;
+        background-position: -44px 0;
+      }
+    }
+    .login-icon.active{
+      border: 1px solid #fff;
+    }
+
+  }
+  input{
+    display: block;
+    margin: 20px 0;
+    background: rgba( 255,255,255,0.15);
+    border: none;
+    padding: 0 3%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    color: #fff;
+  }
+
+  .sms-code-input {
+      margin: 20px 0;
+
+      .form-control {
+          margin: 0;
+      }
+
+      .input-group-addon {
+          background: rgba(255, 255, 255, .15);
+          border: 0;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 4px;
+          border-left: 1px solid;
+          border-top-left-radius: 0;
+          border-top-right-radius: 4px;
+          color: #fff;
+          cursor: pointer;
+
+          &[disabled] {
+              cursor: not-allowed;
+          }
+      }
+    }
+  ::-webkit-input-placeholder { /* WebKit browsers */
+      color: #b4deeb;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+     color: #b4deeb;
+     opacity:  1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+     color: #b4deeb;
+     opacity:  1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+     color: #b4deeb;
+  }
+  button{
+    background: none;
+    border: 1px solid #fff;
+    height: 40px;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+  button:hover{
+    background: #fff;
+    color: #41bfca;
+  }
+}

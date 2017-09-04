@@ -1,0 +1,17 @@
+<div class="zhaimi-pagination-view form-inline">
+  <span uib-pagination first-text="&laquo;" previous-text="&lsaquo;" next-text="&rsaquo;" last-text="&raquo;"
+    boundary-links="true" max-size="5"
+    ng-model="vm.collection.$pagination.currentPage"
+    items-per-page="vm.collection.$pagination.perPage"
+    total-items="vm.collection.$pagination.itemCount">
+  </span>
+  <form class="input-group" novalidate name="jumpForm">
+    <input class="form-control" ng-max="vm.collection.$pagination.pageCount" min="1" step="1" ng-model="vm.pageToGo"
+     placeholder="跳转到…（共{{vm.collection.$pagination.pageCount}}页）" type="number" required input-validation="positiveInteger">
+    <span class="input-group-btn">
+      <button class="btn btn-primary" ng-click="vm.collection.$pagination.currentPage = vm.pageToGo" type="button" ng-disabled="jumpForm.$invalid">
+        <i class="fa fa-share"></i>
+      </button>
+    </span>
+  </form>
+</div>

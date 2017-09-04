@@ -1,0 +1,27 @@
+// @import 'variables';
+.zhaimi-pagination-view {
+  display: inline-block;
+
+  .pagination {
+    display: inline-table;
+    margin: 0;
+  }
+
+
+  .input-group {
+    margin-left: -2px;
+    vertical-align: top;
+
+    .form-control {
+      height: 28px;
+      padding: 3px 9px;
+      width: 100%;
+    }
+  }
+
+  .input-group-btn button {
+    height: 28px;
+    padding: 3px 9px;
+    width: 34px;
+  }
+}

@@ -1,0 +1,51 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+  <div class="sidebar-collapse">
+    <ul class="nav" id="side-menu" nm-side-navigation>
+      <li class="nav-header">
+        <div class="dropdown profile-element text-center" uib-dropdown>
+          <span>
+            <img alt="image" class="avater" ng-src="{{root.superStoreData.superStore.logoUrl || 'http://zhaime.qiniudn.com/uploads/store/yemao_store.jpg'}}">
+          </span>
+          <a class="dropdown-toggle" uib-dropdown-toggle href>
+            <span class="clear">
+              <span class="block m-t-xs">
+                <!-- <strong class="font-bold">{{root.user.name}}, 您好！</strong> -->
+                <strong class="font-bold">吉尔伽美什,您好！</strong>
+              </span>
+            </span>
+          </a>
+      </li>
+
+      <li ng-class="{'active': root.$state.includes('main.renqi')}" >
+        <a ui-sref="main.renqi">
+          <i class="fa fa-heart"></i>
+          <span class="nav-label">人气管理</span>
+          <!-- <span class="fa arrow"></span> -->
+        </a>
+      </li>
+      <li ng-class="{'active': root.$state.includes('main.danmu')}" >
+        <a ui-sref="main.danmu">
+          <i class="fa fa-bullhorn"></i>
+          <span class="nav-label">弹幕管理</span>
+          <!-- <span class="fa arrow"></span> -->
+        </a>
+      </li>
+      <li ng-class="{'active': root.$state.includes('main.liwu')}" >
+        <a ui-sref="main.liwu">
+          <i class="fa  fa-archive"></i>
+          <span class="nav-label">礼物管理</span>
+          <!-- <span class="fa arrow"></span> -->
+        </a>
+      </li>
+      <li ng-class="{'active': root.$state.includes('main.dingyue')}" >
+        <a ui-sref="main.dingyue">
+          <i class="fa fa-plus-square"></i>
+          <span class="nav-label">订阅管理</span>
+          <!-- <span class="fa arrow"></span> -->
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>

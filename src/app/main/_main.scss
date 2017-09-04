@@ -1,0 +1,37 @@
+
+.pagination > .active > a {
+  background-color: #ff4146 !important;
+  color: white !important;
+}
+
+img.avater {
+  width: 48px;
+  height: 48px;
+  @extend .img-circle
+}
+
+ul[datepicker-popup-wrap] {
+  .text-info {
+    color: inherit;
+  }
+  button {
+    &.btn-default {
+      color: #333;
+      background-color: #fff;
+      border-color: #ccc;
+    }
+    &.btn-info {
+      color: #31708f;
+      &.active {
+        background-color: #21b9bb;
+        border-color: #21b9bb;
+        color: #FFFFFF;
+        &:hover {
+          background-color: #21b9bb;
+          border-color: #21b9bb;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "zhaimi-common",
+  "authors": [
+    "stupidisum <sunfeng32@qq.com>"
+  ],
+  "description": "RESTFUL OO API LIB",
+  "main": "dist/zhaimi_common.js",
+  "moduleType": [],
+  "keywords": [
+    "restful",
+    "object-oriented",
+    "api",
+    "zhaimi"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "^1.2.5",
+    "bootstrap-ui-datetime-picker": "^2.3.1",
+    "restangular": "~1.5.1",
+    "lodash": "^3.0.0",
+    "angular-moment": "^1.0.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.5.5"
+  },
+  "version": "0.2.5",
+  "_release": "0.2.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.5",
+    "commit": "ee65bcbbd7024d66f50148e5366c24235927d97d"
+  },
+  "_source": "git@git.zhai.me:Stupid/zhaimi-common.git",
+  "_target": "^0.2.3",
+  "_originalSource": "git@git.zhai.me:Stupid/zhaimi-common.git"
+}
