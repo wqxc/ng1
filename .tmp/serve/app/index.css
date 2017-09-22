@@ -15354,6 +15354,42 @@ button.close {
   border: 1px solid red;
 }
 
+.pagination > .active > a {
+  background-color: #ff4146 !important;
+  color: white !important;
+}
+
+img.avater {
+  width: 48px;
+  height: 48px;
+}
+
+ul[datepicker-popup-wrap] .text-info {
+  color: inherit;
+}
+
+ul[datepicker-popup-wrap] button.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+ul[datepicker-popup-wrap] button.btn-info {
+  color: #31708f;
+}
+
+ul[datepicker-popup-wrap] button.btn-info.active {
+  background-color: #21b9bb;
+  border-color: #21b9bb;
+  color: #FFFFFF;
+}
+
+ul[datepicker-popup-wrap] button.btn-info.active:hover {
+  background-color: #21b9bb;
+  border-color: #21b9bb;
+  color: #FFFFFF;
+}
+
 .back-login {
   position: absolute;
   width: 100%;
@@ -15504,42 +15540,6 @@ button.close {
 .back-login button:hover {
   background: #fff;
   color: #41bfca;
-}
-
-.pagination > .active > a {
-  background-color: #ff4146 !important;
-  color: white !important;
-}
-
-img.avater {
-  width: 48px;
-  height: 48px;
-}
-
-ul[datepicker-popup-wrap] .text-info {
-  color: inherit;
-}
-
-ul[datepicker-popup-wrap] button.btn-default {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
-}
-
-ul[datepicker-popup-wrap] button.btn-info {
-  color: #31708f;
-}
-
-ul[datepicker-popup-wrap] button.btn-info.active {
-  background-color: #21b9bb;
-  border-color: #21b9bb;
-  color: #FFFFFF;
-}
-
-ul[datepicker-popup-wrap] button.btn-info.active:hover {
-  background-color: #21b9bb;
-  border-color: #21b9bb;
-  color: #FFFFFF;
 }
 
 body {

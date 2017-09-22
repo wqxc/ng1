@@ -2,12 +2,12 @@ export function DingYueController() {
     'ngInject';
     'use strict';
     let vm=this;
-    vm.dingYueList=[];
-    function active(){
-      show();
+  
+    vm.name = "dreamapple";
+    vm.age = 20;
+    vm.changeAge = function(){
+        console.log("this is xxxx");
+        vm.age = 0;
     }
-    function show(){
-      console.log('这是订阅');
-    }
-    active()
+
 }

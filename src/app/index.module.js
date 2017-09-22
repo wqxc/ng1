@@ -16,6 +16,7 @@ import {DanMUController} from './DanMu/danmu';
 import {NewDMDutyController} from './DanMu/NewDMDuty/newdmduty';
 import {DingYueController} from './DingYue/dingyue';
 import {LiWuController} from './LiWu/liwu';
+import {myDirective} from './common/service/direstive';
 
 
 import{BallController} from './ball/ball';
@@ -46,3 +47,5 @@ angular.module('kun', ['ngAnimate',
   .factory('NotifyService',NotifyService)
   .factory('dataService',dataService)
   .factory('HttpInterceptor',HttpInterceptor)
+
+  .directive('myDirective',myDirective)
